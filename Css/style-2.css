@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #E8EFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Styles for the container */
+.container {
+    position: relative; /* Make the container a positioning context */
+    background-color: #ffffff;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    max-width: 500px; /* Maximum width for content */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    border-radius: 20px; /* Rounded corners */
+}
+
+/* Styles for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* Reduced by 25% */
+}
+
+/* Styles for the logo */
+.logo-container img {
+    width: 60px; /* Reduced by 25% */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for the icons */
+.icons-container {
+    display: flex;
+    gap: 7.5px; /* Reduced by 25% */
+}
+
+/* Styles for the navigation bar */
+.navbar {
+    background-color: #114388; /* Background color for the navigation bar */
+    padding: 7.5px; /* Reduced by 25% */
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 15px; /* Rounded corners, reduced by 25% */
+}
+
+/* Styles for the navigation icons */
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px; /* Adjusted to match the container width */
+    margin: 0 auto; /* Center the icons within the container */
+}
+
+/* Styles for all icons */
+.icon-link img {
+    height: 37.5px; /* Reduced by 25% */
+    width: auto;
+    max-width: 100%; /* Limit maximum width */
+}
+
+/* Styles for the home icon */
+.home-icon {
+    margin-top: 7.5px; /* Reduced by 25% */
+}
