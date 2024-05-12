@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #E8EFFF;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
@@ -11,7 +11,7 @@ body {
 /* Styles for the container */
 .container {
     position: relative; /* Make the container a positioning context */
-    background-color: #ffffff;
+    background-color: #E8EFFF;
     width: 100vw; /* Full width of the viewport */
     height: 100vh; /* Full height of the viewport */
     max-width: 500px; /* Maximum width for content */
@@ -30,6 +30,10 @@ body {
     align-items: center;
     margin-bottom: 15px; /* Reduced by 25% */
 }
+
+
+
+
 
 /* Styles for the logo */
 .logo-container img {
@@ -74,4 +78,60 @@ body {
 /* Styles for the home icon */
 .home-icon {
     margin-top: 7.5px; /* Reduced by 25% */
+}
+
+/* Styles for the data container */
+.data-container {
+    display: flex;
+    flex-direction: column; /* Stack squares vertically */
+    gap: 20px; /* Space between squares */
+    width: calc(100% - 40px); /* Adjusted width to account for 20px margin on both sides */
+    margin: 0 auto; /* Center the container */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding-right: 20px; /* Add some space on the right for the scrollbar */
+}
+
+/* Hide the vertical scrollbar */
+.data-container::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+    background: transparent; /* Set scrollbar background color */
+}
+
+
+/* Styles for the content inside the square */
+.square-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the title */
+.title {
+    font-weight: bold;
+    font-size: 1.2em; /* Larger than default text */
+    order: 2; /* Set the order of the title to 2 */
+}   
+/* Styles for the icon */
+.icon img {
+    height: 30px; /* Adjust icon size as needed */
+    width: auto;
+    max-width: 100%; /* Limit maximum width */
+}
+
+/* Styles for the square */
+.square {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space evenly between children */
+    align-items: center; /* Center items vertically */
+    background-color: #ffffff; /* White background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px;
+    flex-grow: 1; /* Take up remaining space */
+    box-sizing: border-box; /* Include padding in width calculation */
+    width: 80%; /* At least 80% of the container width */
+    margin: 0 auto; /* Center the squares */
+}
+
+/* Styles for the SVG icon */
+.icon {
+    order: 1; /* Set the order of the SVG icon to 1 */
 }
